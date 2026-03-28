@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title> Multiplication table ( 5-18 ) </title>
+</head>
+<body>
+
+<form method="post">
+    Input Number: <input type="number" name="num" required>
+    <button type="submit"> Summit </button>
+</form>
+
+<?php
+if (isset($_POST['num'])) {
+    $num = $_POST['num'];
+
+    echo "<h3>multiplication table $num (5-18)</h3>";
+
+    for ($i = 5; $i <= 18; $i++) {
+        $result = $num * $i;
+        echo "$num x $i = $result <br>";
+    }
+}
+?>
+
+</body>
+</html>
